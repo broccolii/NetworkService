@@ -11,7 +11,7 @@ import Foundation
 // 第一个 request 是用来判断 是否有网络请求 如果为 nil 那么就是从 cache 里面读取的数据
 // 第二个 object 是 response 对象 一般是 json 数据
 // NSError 这里保存一些 错误信息 在外部 可以 自定义 error 对象 用来 throw 错误
-typealias ServiceResponseBlock = (NSURLRequest, AnyObject, NSError) -> Void
+typealias ServiceResponseBlock = (NSURLRequest, AnyObject, error, NSError) -> Void
 
 public let kHttpMethodPOST = "POST"
 public let kHttpMethodGET = "GET"

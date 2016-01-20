@@ -9,22 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Mantle.xcscheme</key>
+		<key>Argo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Moya.xcscheme</key>
+		<key>Curry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-NetworkService.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Result.xcscheme</key>
+		<key>Runes.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>43EAF4725C955EDA81357B528660CBC0</key>
+		<key>28E618D9359494C1A68D1922E59D48BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>647A4ED80EE2ACE06EA6BDBE91C0A6BE</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D02E08439589872996252F4061652195</key>
+		<key>5D2CA4FA10B4B3D9CB5716ED97968717</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D544B6E310C3B53BF6527F039C590B58</key>
+		<key>6ACFD997082DFD7E02C5B0222F5CA507</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF66AD63AE7675D65B3CD8778C047BC4</key>
+		<key>8675C280CB6A0E65707D0DB1D1568BCE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC74EDE9A14B473FB63BA8E2E682AB08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF2860965472E288AEB1C1DCEDC0C240</key>
 		<dict>
 			<key>primary</key>
 			<true/>

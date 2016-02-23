@@ -11,28 +11,9 @@ import Alamofire
 import RxSwift
 import Argo
 
-// 第一个 request 是用来判断 是否有网络请求 如果为 nil 那么就是从 cache 里面读取的数据
-// 第二个 object 是 response 对象 一般是 json 数据
-// NSError 这里保存一些 错误信息 在外部 可以 自定义 error 对象 用来 throw 错误
-typealias ServiceResponseBlock = (NSURLRequest, AnyObject, NSError) -> Void
 
 public let kHttpMethodPOST = "POST"
 public let kHttpMethodGET = "GET"
-
-// 读取 Cache 的几种类型
-struct CachePolicy : OptionSetType {
-    let rawValue: Int
-    // 直接网络获取数据 不管本地的 Cache
-    static let None = CachePolicy(rawValue: 0)
-    // 读取本地 Cache (可能会有失效)
-    static let ReadCache = CachePolicy(rawValue: 1 << 0)
-    // 只读 有效的 Cache
-    static let ReadValidCache = CachePolicy(rawValue: 1 << 1)
-    // 网络获取 同时写入 Cache
-    static let WriteToCache  = CachePolicy(rawValue: 1 << 2)
-    // 不网络获取
-    static let DoNotLoadFromServer  = CachePolicy(rawValue: 1 << 3)
-}
 
 class BaseNetworkCache {
     var data: NSData?
@@ -62,8 +43,6 @@ protocol BaseNetworkCacheProtocol {
 /*************************************自定义错误类型*****************************************/
  // 这一部分的错误形式和信息 我还没想好要怎么弄 先 放一个在这里
 enum BaseNetworkError: ErrorType {
-    case NoCache
-    case CouldNotMakeJSON
     case NoData
 }
 
